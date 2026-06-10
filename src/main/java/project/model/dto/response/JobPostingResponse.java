@@ -15,6 +15,7 @@ import project.model.entity.enum_type.JobStatusEnum;
 @Data
 @Builder
 public class JobPostingResponse {
+    private Long jobId;
     private String title;
     private String description;
     private String salaryRange;

@@ -7,8 +7,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import project.model.dto.request.JobPostingDTO;
 import project.model.dto.request.JobPostingUpdateDTO;
+import project.model.dto.request.UpdateStatusApplicationRequest;
 import project.model.dto.response.ApiDataResponse;
+import project.model.dto.response.ApplicationResponse;
 import project.model.dto.response.JobPostingResponse;
+import project.service.ApplicationService;
 import project.service.JobPostingService;
 
 @RestController
@@ -16,6 +19,7 @@ import project.service.JobPostingService;
 @RequiredArgsConstructor
 public class EmployerController {
     private final JobPostingService jobPostingService;
+    private final ApplicationService applicationService;
 
     @PostMapping("/up-jobPosting")
     public ResponseEntity<ApiDataResponse<JobPostingResponse>> upJobPosting(@Valid @RequestBody JobPostingDTO jobPostingDTO) {
@@ -47,6 +51,18 @@ public class EmployerController {
                 true,
                 "Cập nhật tin thành công !",
                 jobPostingService.updateJobPosting(idJob,jobPostingDTO),
+                null,
+                HttpStatus.OK
+        ) , HttpStatus.OK);
+    }
+
+    @PostMapping("/update-statusApplication/{idApp}")
+    public ResponseEntity<ApiDataResponse<ApplicationResponse>> updateStatusApplication(@Valid @RequestBody UpdateStatusApplicationRequest updateStatusApplicationRequest ,
+                                                                                        @PathVariable long idApp) {
+        return new ResponseEntity<>(new ApiDataResponse<>(
+                true,
+                "Cập nhật trạng thái hồ sơ thành công .",
+                applicationService.updateStatusApplication(idApp,updateStatusApplicationRequest.getApplicationStatus()),
                 null,
                 HttpStatus.OK
         ) , HttpStatus.OK);

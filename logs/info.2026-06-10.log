@@ -148,3 +148,220 @@
 2026-06-10 11:08:26.222 [http-nio-8080-exec-3] INFO  project.service.impl.JobPostingServiceImpl - Tin này đã được duyệt từ trước rồi !
 2026-06-10 11:08:30.800 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
 2026-06-10 11:08:30.802 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2026-06-10 15:55:58.783 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 26660 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 15:55:58.790 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 15:56:06.235 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 15:56:07.256 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@461461be
+2026-06-10 15:56:07.262 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 15:56:13.485 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 15.808 seconds (process running for 17.367)
+2026-06-10 15:56:14.760 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 16:04:00.486 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 16:04:00.498 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 16:04:00.680 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 26660 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 16:04:00.680 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 16:04:02.026 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-06-10 16:04:02.066 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47f4e4d
+2026-06-10 16:04:02.067 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-06-10 16:04:04.300 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 3.701 seconds (process running for 488.183)
+2026-06-10 16:04:04.445 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 16:04:05.607 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-06-10 16:04:05.611 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-06-10 16:04:05.763 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 26660 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 16:04:05.763 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 16:04:06.473 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-06-10 16:04:06.494 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77cf9e4a
+2026-06-10 16:04:06.494 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-06-10 16:04:07.717 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 2.015 seconds (process running for 491.6)
+2026-06-10 16:04:07.781 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 16:05:39.820 [http-nio-8080-exec-6] INFO  project.service.impl.UserServiceImpl - Sai email hoặc password !
+2026-06-10 16:06:31.970 [http-nio-8080-exec-9] INFO  project.service.impl.UserServiceImpl - User admin@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-10 16:09:55.262 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-06-10 16:09:55.267 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-06-10 17:51:34.401 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 24552 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 17:51:34.411 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 17:51:42.589 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 17:51:43.340 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c0e23b0
+2026-06-10 17:51:43.342 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 17:51:48.549 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 15.378 seconds (process running for 17.19)
+2026-06-10 17:51:49.575 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 17:52:45.736 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 17:52:45.744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 18:00:48.220 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 16992 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 18:00:48.225 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 18:00:52.922 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 18:00:53.626 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43ee8882
+2026-06-10 18:00:53.629 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 18:00:59.573 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 12.262 seconds (process running for 13.616)
+2026-06-10 18:01:00.638 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 18:03:34.406 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 18:03:34.415 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 18:52:49.198 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22712 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 18:52:49.203 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 18:52:54.698 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 18:52:55.494 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43d0474
+2026-06-10 18:52:55.500 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 18:53:02.168 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 13.885 seconds (process running for 15.255)
+2026-06-10 18:53:03.256 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 18:55:55.262 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 18:55:55.289 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 18:55:55.532 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22712 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 18:55:55.533 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 18:55:56.975 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-06-10 18:55:57.025 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37578a96
+2026-06-10 18:55:57.026 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-06-10 18:55:58.066 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-06-10 18:55:58.078 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-06-10 18:55:59.672 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22712 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 18:55:59.672 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 18:56:00.593 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-06-10 18:56:00.621 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18299e97
+2026-06-10 18:56:00.621 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-06-10 18:56:01.803 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 2.188 seconds (process running for 194.889)
+2026-06-10 18:56:01.886 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 18:59:29.824 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-06-10 18:59:29.834 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-06-10 18:59:30.073 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22712 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 18:59:30.074 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 18:59:31.467 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-06-10 18:59:31.503 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e415542
+2026-06-10 18:59:31.504 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-06-10 18:59:33.635 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 3.666 seconds (process running for 406.721)
+2026-06-10 18:59:33.738 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:02:25.238 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-06-10 19:02:25.249 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-06-10 19:02:25.464 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22712 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:02:25.465 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:02:26.920 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-06-10 19:02:26.961 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a27e9c
+2026-06-10 19:02:26.962 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-06-10 19:02:29.017 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 3.642 seconds (process running for 582.104)
+2026-06-10 19:02:29.100 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:05:38.557 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-06-10 19:05:38.561 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-06-10 19:05:42.504 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 25908 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:05:42.509 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:05:47.169 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 19:05:47.912 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44b90423
+2026-06-10 19:05:47.918 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 19:05:53.604 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 11.923 seconds (process running for 13.07)
+2026-06-10 19:05:54.665 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:07:23.651 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 19:07:23.665 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 19:07:23.886 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 25908 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:07:23.887 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:07:25.275 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-06-10 19:07:25.310 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e7f4c5f
+2026-06-10 19:07:25.311 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-06-10 19:07:26.757 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 2.966 seconds (process running for 106.223)
+2026-06-10 19:07:26.823 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:08:34.281 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-06-10 19:08:34.290 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-06-10 19:08:34.494 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 25908 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:08:34.494 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:08:37.362 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 25908 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:08:37.362 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:08:38.283 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-06-10 19:08:38.312 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fdcbdae
+2026-06-10 19:08:38.313 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-06-10 19:08:40.177 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 2.865 seconds (process running for 179.643)
+2026-06-10 19:08:40.274 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:13:45.852 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-06-10 19:13:45.859 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-06-10 19:13:46.043 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 25908 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:13:46.043 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:13:47.628 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-06-10 19:13:47.669 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d4854c7
+2026-06-10 19:13:47.669 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-06-10 19:13:49.203 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 3.24 seconds (process running for 488.67)
+2026-06-10 19:13:49.300 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:14:46.831 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-06-10 19:14:46.836 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-06-10 19:14:50.599 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 20932 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:14:50.605 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:14:54.682 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 19:14:55.200 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f0d51be
+2026-06-10 19:14:55.203 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 19:15:00.998 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 11.429 seconds (process running for 12.652)
+2026-06-10 19:15:02.496 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:17:23.184 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 19:17:23.191 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 19:24:19.934 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 12292 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:24:19.939 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:24:23.988 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 19:24:24.553 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6279b661
+2026-06-10 19:24:24.557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 19:24:29.116 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 10.014 seconds (process running for 11.184)
+2026-06-10 19:24:30.013 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:24:58.852 [http-nio-8080-exec-4] INFO  project.aspect.ApplicationAspect - Candidate ID: candidate123@gmail.com applied for Job ID: 1
+2026-06-10 19:25:23.263 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 19:25:23.269 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 19:37:42.094 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:37:42.099 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:37:47.709 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 19:37:48.263 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f217899
+2026-06-10 19:37:48.265 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 19:37:53.246 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 12.029 seconds (process running for 13.278)
+2026-06-10 19:37:54.139 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:40:29.195 [http-nio-8080-exec-8] INFO  project.service.impl.ApplicationServiceImpl - Bạn không thể duyệt đơn ứng tuyển khác bên ngoài !
+2026-06-10 19:41:26.817 [http-nio-8080-exec-3] INFO  project.service.impl.UserServiceImpl - User employer2@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-10 19:41:55.808 [http-nio-8080-exec-5] INFO  project.service.impl.ApplicationServiceImpl - Bạn không thể duyệt đơn ứng tuyển khác bên ngoài !
+2026-06-10 19:42:33.668 [http-nio-8080-exec-8] INFO  project.service.impl.ApplicationServiceImpl - Bạn không thể duyệt đơn ứng tuyển khác bên ngoài !
+2026-06-10 19:43:16.767 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 19:43:16.777 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-10 19:43:16.924 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:43:16.924 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:43:17.716 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-06-10 19:43:17.740 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d15ecba
+2026-06-10 19:43:17.741 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-06-10 19:43:18.460 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-06-10 19:43:18.465 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-06-10 19:43:20.042 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:43:20.042 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:43:21.353 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-06-10 19:43:21.384 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20e6fb9d
+2026-06-10 19:43:21.384 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-06-10 19:43:23.249 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 3.282 seconds (process running for 343.281)
+2026-06-10 19:43:23.338 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:43:23.410 [http-nio-8080-exec-3] INFO  project.service.impl.ApplicationServiceImpl - Bạn không thể duyệt đơn ứng tuyển khác bên ngoài !
+2026-06-10 19:43:25.896 [http-nio-8080-exec-4] INFO  project.service.impl.ApplicationServiceImpl - Bạn không thể duyệt đơn ứng tuyển khác bên ngoài !
+2026-06-10 19:43:34.025 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-06-10 19:43:34.034 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-06-10 19:43:34.234 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:43:34.234 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:43:35.425 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-06-10 19:43:35.451 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25ff0834
+2026-06-10 19:43:35.452 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-06-10 19:43:35.958 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-06-10 19:43:35.970 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-06-10 19:43:37.560 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:43:37.561 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:43:39.011 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-06-10 19:43:39.037 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a1f8172
+2026-06-10 19:43:39.037 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-06-10 19:43:41.306 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 3.841 seconds (process running for 361.338)
+2026-06-10 19:43:41.403 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:45:27.817 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-06-10 19:45:27.826 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-06-10 19:45:28.013 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:45:28.013 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:45:29.229 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-06-10 19:45:29.263 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b9512ee
+2026-06-10 19:45:29.263 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-06-10 19:45:30.383 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2026-06-10 19:45:30.392 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2026-06-10 19:46:51.538 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 8216 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:46:51.538 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:46:52.819 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2026-06-10 19:46:52.851 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e8276c9
+2026-06-10 19:46:52.852 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2026-06-10 19:46:53.835 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2026-06-10 19:46:53.845 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2026-06-10 19:47:09.752 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 492 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-10 19:47:09.757 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-10 19:47:14.978 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-10 19:47:15.653 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1280bf54
+2026-06-10 19:47:15.656 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-10 19:47:21.869 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 13.002 seconds (process running for 14.334)
+2026-06-10 19:47:22.931 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-10 19:48:09.786 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-10 19:48:09.795 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -147,4 +147,13 @@ public class JobPostingServiceImpl implements JobPostingService {
         JobPosting jobPosting1 = jobPostingRepository.save(jobPosting.get());
         return jobPostingMapper.mapToJobPostingResponse(jobPosting1);
     }
+
+    @Override
+    public Page<JobPostingResponse> findByTitle(String title, Integer page, Integer size) {
+        Pageable pageable = PageRequest.of(page-1, size);
+        Page<JobPosting> pageResult = jobPostingRepository.findAllByTitleContaining(title,pageable);
+        List<JobPosting> content = pageResult.getContent();
+        List<JobPostingResponse> contentResult = content.stream().map(jobPostingMapper::mapToJobPostingResponse).toList();
+        return new PageImpl<>(contentResult, pageResult.getPageable(), pageResult.getTotalElements());
+    }
 }

@@ -21,6 +21,10 @@ public class JWTProvider {
     @Value("${jwt-expired}")
     private Long jwtExpired;
 
+    @Value("${jwt-reset-secret}")
+    private String jwtResetSecret;
+
+
     public String generateToken(String email) {
         try {
             Date today = new Date();
@@ -98,4 +102,41 @@ public class JWTProvider {
             throw new RuntimeException("Không thể trích xuất thời gian hết hạn từ token " + e);
         }
     }
+
+    public String generateResetPasswordToken(String email) {
+        try {
+            Date today = new Date();
+            long resetExpiry = 5 * 60 * 1000;
+            Date expiredJWT = new Date(today.getTime() + resetExpiry);
+
+            SecretKey key = Keys.hmacShaKeyFor(jwtResetSecret.getBytes(StandardCharsets.UTF_8));
+
+            return Jwts.builder()
+                    .subject(email)
+                    .issuedAt(today)
+                    .expiration(expiredJWT)
+                    .signWith(key)
+                    .compact();
+        } catch (Exception e){
+            log.error("generateResetPasswordToken", e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    public boolean validateResetToken(String token) {
+        try {
+            SecretKey key = Keys.hmacShaKeyFor(jwtResetSecret.getBytes(StandardCharsets.UTF_8));
+            Jwts.parser().verifyWith(key).build().parseSignedClaims(token);
+            return true;
+        } catch (Exception e) {
+            log.error("Token reset password không hợp lệ: {}", e.getMessage());
+            throw new RuntimeException("Link xác thực không hợp lệ hoặc đã hết hạn!");
+        }
+    }
+
+    public String getEmailFromResetToken(String token) {
+        SecretKey key = Keys.hmacShaKeyFor(jwtResetSecret.getBytes(StandardCharsets.UTF_8));
+        return Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload().getSubject();
+    }
+
 }

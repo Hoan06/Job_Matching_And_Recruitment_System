@@ -8,6 +8,7 @@ import project.model.entity.JobPosting;
 public class JobPostingMapper {
     public JobPostingResponse mapToJobPostingResponse(JobPosting jobPosting) {
         return JobPostingResponse.builder()
+                .jobId(jobPosting.getId())
                 .title(jobPosting.getTitle())
                 .description(jobPosting.getDescription())
                 .status(jobPosting.getStatus())

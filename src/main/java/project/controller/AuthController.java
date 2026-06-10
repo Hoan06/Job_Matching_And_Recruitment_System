@@ -4,15 +4,14 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import project.model.dto.request.LoginDTO;
-import project.model.dto.request.LogoutRequest;
-import project.model.dto.request.RefreshTokenRequest;
-import project.model.dto.request.UserDTO;
+import project.model.dto.request.*;
 import project.model.dto.response.ApiDataResponse;
 import project.model.dto.response.JWTResponse;
 import project.model.dto.response.UserResponse;
 import project.model.entity.RefreshToken;
+import project.service.AuthService;
 import project.service.RefreshTokenService;
 import project.service.UserService;
 
@@ -22,6 +21,7 @@ import project.service.UserService;
 public class AuthController {
     private final UserService userService;
     private final RefreshTokenService refreshTokenService;
+    private final AuthService authService;
 
     @PostMapping("/register")
     public ResponseEntity<ApiDataResponse<UserResponse>> registerUser(@Valid @RequestBody UserDTO userDTO) {
@@ -57,6 +57,7 @@ public class AuthController {
     }
 
     @PostMapping("/logout")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<ApiDataResponse<Boolean>> logout(@Valid @RequestBody LogoutRequest logoutRequest ,
                                                           @RequestHeader("Authorization") String accessToken) {
         return new ResponseEntity<>(new ApiDataResponse<>(
@@ -66,5 +67,39 @@ public class AuthController {
                 null,
                 HttpStatus.OK
         ) , HttpStatus.OK);
+    }
+
+    @PostMapping("/forgot-password")
+    public ResponseEntity<ApiDataResponse<Object>> forgotPassword(@Valid @RequestBody ForgotPasswordRequest forgotPasswordRequest) {
+        return new ResponseEntity<>(new ApiDataResponse<>(
+                true,
+                "Đã gửi link reset về email .",
+                authService.forgotPassword(forgotPasswordRequest.getEmail()),
+                null,
+                HttpStatus.OK
+        ) , HttpStatus.OK);
+    }
+
+    @PostMapping("/reset-password")
+    public ResponseEntity<ApiDataResponse<Boolean>> resetPassword(@Valid @RequestBody ResetPasswordRequest resetPasswordRequest , @RequestParam("token") String token) {
+        return new ResponseEntity<>(new ApiDataResponse<>(
+                true,
+                "Khôi phục mật khẩu thành công .",
+                authService.resetPassword(resetPasswordRequest.getEmail(), resetPasswordRequest.getPassword(), token),
+                null,
+                HttpStatus.OK
+        ) , HttpStatus.OK);
+    }
+
+    @PostMapping("/change-password")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<ApiDataResponse<Boolean>> changePassword(@Valid @RequestBody ChangePasswordRequest changePasswordRequest) {
+        return new ResponseEntity<>(new ApiDataResponse<>(
+                true,
+                "Đổi mật khẩu thành công .",
+                authService.changePassword(changePasswordRequest.getOldPassword(), changePasswordRequest.getNewPassword()),
+                null,
+                HttpStatus.OK
+        ), HttpStatus.OK);
     }
 }
