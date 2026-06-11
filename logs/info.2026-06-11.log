@@ -1,0 +1,27 @@
+2026-06-11 14:49:36.403 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 28972 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 14:49:36.405 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-11 14:49:38.417 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-11 14:49:38.727 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19532064
+2026-06-11 14:49:38.728 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-11 14:49:41.308 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 5.289 seconds (process running for 5.926)
+2026-06-11 14:49:41.766 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-11 14:50:13.088 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-11 14:50:13.088 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-11 14:52:24.161 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-11 14:52:24.166 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-11 15:02:37.677 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 33324 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 15:02:37.680 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-11 15:02:39.517 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-11 15:02:39.771 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a363a2
+2026-06-11 15:02:39.773 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-11 15:02:42.729 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 5.392 seconds (process running for 5.98)
+2026-06-11 15:02:43.205 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-11 15:02:45.384 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-11 15:02:45.385 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-11 15:03:01.751 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : isCheckBlacklist
+2026-06-11 15:03:01.770 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : revokeRefreshToken
+2026-06-11 15:03:01.773 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - User employer1@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-11 15:03:01.773 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : logout
+2026-06-11 15:03:21.495 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : createJobPosting
+2026-06-11 15:03:42.711 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-11 15:03:42.715 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
