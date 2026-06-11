@@ -124,10 +124,16 @@ public class UserServiceImpl implements UserService {
         }
 
         LocalDateTime expirationDate = jwtProvider.getExpirationDateFromToken(token);
-        Long remainingTimeMillis = expirationDate.getHour() - System.currentTimeMillis();
+
+        long remainingTimeMillis = java.time.Duration.between(LocalDateTime.now(), expirationDate).toMillis();
+
+        log.info("Thời gian còn lại của token (ms): {}", remainingTimeMillis);
 
         if (remainingTimeMillis > 0) {
             redisBlacklistService.blacklistToken(token, remainingTimeMillis);
+            log.info("Đã lưu token vào Redis Blacklist thành công.");
+        } else {
+            log.warn("Token đã hết hạn từ trước, không đưa vào Redis.");
         }
 
         log.info("User {} đã đăng xuất thành công và vô hiệu hóa Token.", email);

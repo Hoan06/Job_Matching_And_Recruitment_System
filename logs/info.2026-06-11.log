@@ -25,3 +25,29 @@
 2026-06-11 15:03:21.495 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : createJobPosting
 2026-06-11 15:03:42.711 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-06-11 15:03:42.715 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-11 15:07:36.393 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 29820 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 15:07:36.395 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-11 15:07:38.139 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-11 15:07:38.368 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ca82462
+2026-06-11 15:07:38.369 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-11 15:07:42.028 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 5.953 seconds (process running for 6.508)
+2026-06-11 15:07:42.357 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-11 15:07:46.012 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-11 15:07:46.013 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-11 15:08:05.457 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : isCheckBlacklist
+2026-06-11 15:08:05.474 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : revokeRefreshToken
+2026-06-11 15:08:05.478 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 579521
+2026-06-11 15:08:05.485 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : blacklistToken
+2026-06-11 15:08:05.485 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-11 15:08:05.485 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - User employer1@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-11 15:08:05.485 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : employer1@gmail.com thực hiện chức năng : logout
+2026-06-11 15:08:20.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-11 15:08:20.491 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-11 15:13:41.425 [Test worker] INFO  project.test.AuthControllerTest - Starting AuthControllerTest using Java 21.0.9 with PID 28732 (started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 15:13:41.426 [Test worker] INFO  project.test.AuthControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-06-11 15:23:57.592 [Test worker] INFO  project.controller.AdminControllerTest - Starting AdminControllerTest using Java 21.0.9 with PID 17348 (started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 15:23:57.593 [Test worker] INFO  project.controller.AdminControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-06-11 15:25:08.271 [Test worker] INFO  project.controller.AdminControllerTest - Starting AdminControllerTest using Java 21.0.9 with PID 29276 (started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 15:25:08.272 [Test worker] INFO  project.controller.AdminControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-06-11 15:25:35.902 [Test worker] INFO  project.controller.AdminControllerTest - Starting AdminControllerTest using Java 21.0.9 with PID 8208 (started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-11 15:25:35.903 [Test worker] INFO  project.controller.AdminControllerTest - No active profile set, falling back to 1 default profile: "default"

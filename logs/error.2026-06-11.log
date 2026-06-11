@@ -230,3 +230,65 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 2026-06-11 15:03:01.680 [http-nio-8080-exec-2] ERROR project.aspect.AppAspect - Lỗi xảy ra khi ghi log AOP: Cannot invoke "org.springframework.security.core.Authentication.getName()" because the return value of "org.springframework.security.core.context.SecurityContext.getAuthentication()" is null
 2026-06-11 15:03:21.468 [http-nio-8080-exec-5] ERROR project.aspect.AppAspect - Lỗi xảy ra khi ghi log AOP: Cannot invoke "org.springframework.security.core.Authentication.getName()" because the return value of "org.springframework.security.core.context.SecurityContext.getAuthentication()" is null
+2026-06-11 15:08:05.393 [http-nio-8080-exec-2] ERROR project.aspect.AppAspect - Lỗi xảy ra khi ghi log AOP: Cannot invoke "org.springframework.security.core.Authentication.getName()" because the return value of "org.springframework.security.core.context.SecurityContext.getAuthentication()" is null
+2026-06-11 15:08:15.729 [http-nio-8080-exec-4] ERROR project.aspect.AppAspect - Lỗi xảy ra khi ghi log AOP: Cannot invoke "org.springframework.security.core.Authentication.getName()" because the return value of "org.springframework.security.core.context.SecurityContext.getAuthentication()" is null
+2026-06-11 15:13:42.000 [Test worker] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in project.controller.AuthController required a bean of type 'project.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'project.service.UserService' in your configuration.
+
+2026-06-11 15:23:59.070 [Test worker] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in project.security.jwt.JWTAuthFilter required a bean of type 'project.security.jwt.JWTProvider' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'project.security.jwt.JWTProvider' in your configuration.
+
+2026-06-11 15:25:09.852 [Test worker] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in project.security.jwt.JWTAuthFilter required a bean of type 'project.repository.TokenBlackListRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'project.repository.TokenBlackListRepository' in your configuration.
+
+2026-06-11 15:25:37.497 [Test worker] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in project.security.jwt.JWTAuthFilter required a bean of type 'project.repository.TokenBlackListRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'project.repository.TokenBlackListRepository' in your configuration.
+

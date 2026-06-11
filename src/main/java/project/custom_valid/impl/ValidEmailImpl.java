@@ -2,6 +2,7 @@ package project.custom_valid.impl;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import project.custom_valid.ValidEmail;
 import project.model.entity.User;
