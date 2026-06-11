@@ -73,7 +73,7 @@ public class AuthController {
     public ResponseEntity<ApiDataResponse<Object>> forgotPassword(@Valid @RequestBody ForgotPasswordRequest forgotPasswordRequest) {
         return new ResponseEntity<>(new ApiDataResponse<>(
                 true,
-                "Đã gửi link reset về email .",
+                "Mã token để reset đã được gửi .",
                 authService.forgotPassword(forgotPasswordRequest.getEmail()),
                 null,
                 HttpStatus.OK

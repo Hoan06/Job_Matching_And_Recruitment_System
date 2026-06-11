@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import project.repository.TokenBlackListRepository;
 import project.security.principle.CustomUserDetails;
+import project.service.impl.RedisBlacklistService;
 
 import java.io.IOException;
 
@@ -22,17 +23,20 @@ public class JWTAuthFilter extends OncePerRequestFilter {
     private final JWTProvider jwtProvider;
     private final UserDetailsService userDetailsService;
     private final TokenBlackListRepository tokenBlackListRepository;
+    private final RedisBlacklistService redisBlacklistService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String token = getTokenFromRequest(request);
         if (token != null) {
-            if (tokenBlackListRepository.existsByTokenValue(token)) {
+
+            if (redisBlacklistService.isCheckBlacklist(token)) {
                 response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                 response.setContentType("application/json;charset=UTF-8");
                 response.getWriter().write("{\"status\": 401, \"message\": \"Token đã bị vô hiệu hóa do người dùng đã đăng xuất!\"}");
                 return;
             }
+
             if (jwtProvider.validateToken(token)) {
                 String email = jwtProvider.getEmailFromToken(token);
                 CustomUserDetails userDetails = (CustomUserDetails) userDetailsService.loadUserByUsername(email);

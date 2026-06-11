@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class ApplicationAspect {
     @AfterReturning("execution(* project.service.impl.ApplicationServiceImpl.applyJob(..))")
-    public void loggingBeforeCallMethod(JoinPoint joinPoint){
+    public void loggingAfterReturningCallMethod(JoinPoint joinPoint){
         try {
             String candidateEmail = SecurityContextHolder.getContext().getAuthentication().getName();
 

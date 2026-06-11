@@ -11,7 +11,7 @@ public class UserMapper {
         return User.builder()
                 .email(userDTO.getEmail())
                 .role(userDTO.getRole())
-                .passwordHash(userDTO.getPasswordHash())
+                .passwordHash(userDTO.getPassword())
                 .build();
     }
 

@@ -48,12 +48,13 @@ public class UserServiceImpl implements UserService {
     private final RefreshTokenService  refreshTokenService;
     private final TokenBlackListRepository tokenBlackListRepository;
     private final UserMapper userMapper;
+    private final RedisBlacklistService  redisBlacklistService;
 
     @Override
     public UserResponse register(UserDTO userDTO) {
         User user = User.builder()
                 .email(userDTO.getEmail())
-                .passwordHash(passwordEncoder.encode(userDTO.getPasswordHash()))
+                .passwordHash(passwordEncoder.encode(userDTO.getPassword()))
                 .role(userDTO.getRole())
                 .active(true)
                 .build();
@@ -109,7 +110,7 @@ public class UserServiceImpl implements UserService {
             log.info("Token trống không hợp lệ!");
             throw new IllegalArgumentException("Token trống không hợp lệ!");
         }
-        if (tokenBlackListRepository.existsByTokenValue(token)) {
+        if (redisBlacklistService.isCheckBlacklist(token)) {
             log.info("Token này đã đăng xuất từ trước đó!");
             throw new RuntimeException("Token này đã đăng xuất từ trước đó!");
         }
@@ -122,13 +123,13 @@ public class UserServiceImpl implements UserService {
             throw new RuntimeException("User không tồn tại hoặc đã bị khóa !");
         }
 
-        TokenBlacklist tokenBlacklist = TokenBlacklist.builder()
-                .tokenValue(token)
-                .user(user)
-                .revokedAt(LocalDateTime.now())
-                .expiryDate(jwtProvider.getExpirationDateFromToken(token))
-                .build();
-        tokenBlackListRepository.save(tokenBlacklist);
+        LocalDateTime expirationDate = jwtProvider.getExpirationDateFromToken(token);
+        Long remainingTimeMillis = expirationDate.getHour() - System.currentTimeMillis();
+
+        if (remainingTimeMillis > 0) {
+            redisBlacklistService.blacklistToken(token, remainingTimeMillis);
+        }
+
         log.info("User {} đã đăng xuất thành công và vô hiệu hóa Token.", email);
         return true;
     }
@@ -146,7 +147,7 @@ public class UserServiceImpl implements UserService {
     public UserResponse createUser(UserDTO userDTO) {
         User user = User.builder()
                 .email(userDTO.getEmail())
-                .passwordHash(passwordEncoder.encode(userDTO.getPasswordHash()))
+                .passwordHash(passwordEncoder.encode(userDTO.getPassword()))
                 .role(userDTO.getRole())
                 .active(true)
                 .build();

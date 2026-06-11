@@ -27,7 +27,7 @@ public class UserDTO {
     @ValidEmail
     private String email;
     @NotBlank(message = "Mật khẩu không được để trống !")
-    private String passwordHash;
+    private String password;
     @NotNull(message = "Vui lòng chọn role !")
     @ValidRoleUser
     private RoleEnum role;

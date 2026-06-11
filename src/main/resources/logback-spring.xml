@@ -59,7 +59,7 @@
     </appender>
 
     <!-- Cấu hình logger cho package -->
-    <logger name="ra.demo" level="INFO" additivity="false">
+    <logger name="project" level="INFO" additivity="false">
         <appender-ref ref="INFO_FILE"/>
         <appender-ref ref="ERROR_FILE"/>
         <appender-ref ref="WARN_FILE"/>
