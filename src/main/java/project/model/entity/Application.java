@@ -26,6 +26,7 @@ public class Application {
     private String cvUrl;
     @Column(name = "applied_at"  , nullable = false)
     private LocalDateTime appliedAt;
+    @Enumerated(EnumType.STRING)
     private ApplicationStatusEnum status;
 
     @ManyToOne

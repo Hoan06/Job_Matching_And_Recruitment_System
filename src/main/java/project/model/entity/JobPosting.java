@@ -27,6 +27,7 @@ public class JobPosting {
     private String description;
     @Column(nullable = false , name = "salary_range")
     private String salaryRange;
+    @Enumerated(EnumType.STRING)
     private JobStatusEnum status;
 
     @ManyToOne
