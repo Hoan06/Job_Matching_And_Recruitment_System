@@ -47,4 +47,23 @@ public class AppAspect {
 
         return result;
     }
+
+    @AfterReturning("execution(* project.service.impl.ApplicationServiceImpl.applyJob(..))")
+    public void loggingAfterReturningCallMethod(JoinPoint joinPoint){
+        try {
+            String candidateEmail = SecurityContextHolder.getContext().getAuthentication().getName();
+
+            Object[] args = joinPoint.getArgs();
+            Long jobId = null;
+
+            if (args != null && args.length > 0 && args[0] instanceof Long) {
+                jobId = (Long) args[0];
+            }
+
+            log.info("Candidate ID: {} applied for Job ID: {}", candidateEmail, jobId);
+
+        } catch (Exception e) {
+            log.error("Lỗi xảy ra khi ghi log AOP: {}", e.getMessage());
+        }
+    }
 }

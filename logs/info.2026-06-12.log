@@ -91,3 +91,18 @@
 2026-06-12 13:13:35.657 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: getAllApplicationsByUser_Id() | Thời gian thực hiện: 22 ms
 2026-06-12 13:13:49.231 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-06-12 13:13:49.236 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-12 13:27:02.999 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 28960 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 13:27:03.001 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 13:27:04.657 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 13:27:04.870 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d7dc216
+2026-06-12 13:27:04.871 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-12 13:27:07.407 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 4.73 seconds (process running for 5.171)
+2026-06-12 13:27:07.819 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-12 13:27:11.505 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 56 ms
+2026-06-12 13:27:11.507 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 334 ms
+2026-06-12 13:27:21.677 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 313 ms
+2026-06-12 13:27:26.788 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: uploadPdf() | Thời gian thực hiện: 4984 ms
+2026-06-12 13:27:26.796 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - Candidate ID: candidate123@gmail.com applied for Job ID: 4
+2026-06-12 13:27:26.796 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: applyJob() | Thời gian thực hiện: 5029 ms
+2026-06-12 13:27:48.215 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-12 13:27:48.217 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
