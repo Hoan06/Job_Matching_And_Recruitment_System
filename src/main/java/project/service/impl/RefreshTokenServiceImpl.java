@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import project.model.dto.request.RefreshTokenRequest;
 import project.model.dto.response.JWTResponse;
 import project.model.entity.RefreshToken;
@@ -18,6 +19,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class RefreshTokenServiceImpl implements RefreshTokenService {
     private final RefreshTokenRepository refreshTokenRepository;
     private final UserDetailsService userDetailsService;
@@ -27,6 +29,7 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     private Long jwtRefreshExpired;
 
     @Override
+    @Transactional
     public RefreshToken createRefreshToken(String email) {
         RefreshToken refreshToken = RefreshToken.builder()
                 .email(email)
@@ -38,6 +41,7 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     }
 
     @Override
+    @Transactional
     public RefreshToken verifyRefreshToken(RefreshToken refreshToken) {
         if (refreshToken.getExpiryDate().compareTo(Instant.now()) < 0) {
             refreshToken.setRevoked(true);
@@ -51,6 +55,7 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     }
 
     @Override
+    @Transactional
     public JWTResponse refreshToken(RefreshTokenRequest refreshToken) {
         String token = refreshToken.getRefreshToken();
         RefreshToken refreshToken1 = refreshTokenRepository.findByRefreshToken(token)
@@ -68,6 +73,7 @@ public class RefreshTokenServiceImpl implements RefreshTokenService {
     }
 
     @Override
+    @Transactional
     public void revokeRefreshToken(String refreshToken) {
         RefreshToken refreshToken1 = refreshTokenRepository.findByRefreshToken(refreshToken).orElseThrow(
                 () -> new RuntimeException("Refresh Token không tồn tại !")

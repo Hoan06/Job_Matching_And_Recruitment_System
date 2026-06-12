@@ -12,6 +12,6 @@ import java.util.Optional;
 
 @Repository
 public interface JobPostingRepository extends JpaRepository<JobPosting, Long> {
-    Page<JobPosting> findAllByTitleContaining(String title, Pageable pageable);
+    Page<JobPosting> findAllByTitleContainingAndStatusEquals(String title, Pageable pageable , JobStatusEnum jobStatusEnum);
     JobPosting findJobPostingByIdAndStatusEquals(Long id, JobStatusEnum status);
 }

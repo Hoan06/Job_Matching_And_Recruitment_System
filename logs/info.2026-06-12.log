@@ -1,0 +1,80 @@
+2026-06-12 12:30:06.620 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 7172 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:30:06.623 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:30:12.451 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:30:13.017 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14cdb586
+2026-06-12 12:30:13.019 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-12 12:30:20.087 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 14.116 seconds (process running for 15.339)
+2026-06-12 12:30:20.770 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-12 12:31:28.920 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-12 12:31:28.921 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-12 12:31:53.941 [http-nio-8080-exec-3] INFO  project.service.impl.JobPostingServiceImpl - Không tìm thấy tin tuyển muốn duyệt !
+2026-06-12 12:32:02.888 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User : admin@gmail.com thực hiện chức năng : browseJobPosting
+2026-06-12 12:32:19.114 [http-nio-8080-exec-5] INFO  project.security.jwt.JWTProvider - Chuỗi jwt hết hạn
+2026-06-12 12:32:28.816 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User : admin@gmail.com thực hiện chức năng : isCheckBlacklist
+2026-06-12 12:32:28.832 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User : admin@gmail.com thực hiện chức năng : revokeRefreshToken
+2026-06-12 12:32:28.837 [http-nio-8080-exec-6] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 539162
+2026-06-12 12:32:28.850 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User : admin@gmail.com thực hiện chức năng : blacklistToken
+2026-06-12 12:32:28.850 [http-nio-8080-exec-6] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-12 12:32:28.850 [http-nio-8080-exec-6] INFO  project.service.impl.UserServiceImpl - User admin@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-12 12:32:28.850 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User : admin@gmail.com thực hiện chức năng : logout
+2026-06-12 12:32:56.514 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-12 12:32:56.514 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-12 12:33:22.941 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : findByTitle
+2026-06-12 12:33:29.187 [http-nio-8080-exec-9] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : findByTitle
+2026-06-12 12:34:22.968 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : getAllApplicationsByUser_Id
+2026-06-12 12:34:36.802 [http-nio-8080-exec-2] INFO  project.security.jwt.JWTProvider - Chuỗi jwt hết hạn
+2026-06-12 12:35:01.299 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : uploadPdf
+2026-06-12 12:35:01.323 [http-nio-8080-exec-5] INFO  project.aspect.ApplicationAspect - Candidate ID: candidate123@gmail.com applied for Job ID: 4
+2026-06-12 12:35:01.323 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : applyJob
+2026-06-12 12:35:06.676 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : getAllApplicationsByUser_Id
+2026-06-12 12:35:12.292 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-12 12:35:12.297 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-12 12:41:17.724 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 24416 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:41:17.726 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:41:21.176 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:41:25.101 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:41:37.728 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 10676 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:41:37.730 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:41:41.228 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:41:45.657 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:48:12.429 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22876 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:48:12.432 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:48:15.728 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:48:16.162 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@903f51
+2026-06-12 12:48:16.163 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-12 12:48:23.926 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 12.067 seconds (process running for 12.951)
+2026-06-12 12:48:25.473 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-12 12:48:27.122 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-12 12:48:27.124 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-12 12:48:49.713 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : getAllApplicationsByUser_Id
+2026-06-12 12:48:54.623 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-12 12:48:54.631 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-12 12:50:45.390 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 16700 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:50:45.392 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:50:48.610 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:50:49.234 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78917bac
+2026-06-12 12:50:49.237 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-12 12:50:56.849 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 12.05 seconds (process running for 12.925)
+2026-06-12 12:50:57.802 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-12 12:50:59.301 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-12 12:50:59.303 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-12 12:51:03.628 [http-nio-8080-exec-4] INFO  project.service.impl.UserServiceImpl - Sai email hoặc password !
+2026-06-12 12:51:07.487 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-12 12:51:07.487 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-12 12:51:10.241 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-12 12:51:10.249 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-12 12:55:18.385 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 11048 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:55:18.388 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:55:21.764 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:59:46.063 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 22536 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 12:59:46.066 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 12:59:49.231 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 12:59:49.647 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bb0200f
+2026-06-12 12:59:49.650 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-12 12:59:54.840 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 9.373 seconds (process running for 10.227)
+2026-06-12 12:59:55.986 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-12 12:59:57.168 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : createRefreshToken
+2026-06-12 12:59:57.170 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User : anonymousUser thực hiện chức năng : login
+2026-06-12 13:00:09.370 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User : candidate123@gmail.com thực hiện chức năng : getAllApplicationsByUser_Id
+2026-06-12 13:00:12.360 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-12 13:00:12.370 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

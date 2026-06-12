@@ -2,11 +2,17 @@ package project.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import project.exception.BadRequestException;
+import project.mapper.ApplicationMapper;
 import project.model.dto.request.ApplicationDTO;
 import project.model.dto.response.ApplicationResponse;
+import project.model.dto.response.JobPostingResponse;
 import project.model.entity.Application;
 import project.model.entity.JobPosting;
 import project.model.entity.User;
@@ -20,6 +26,7 @@ import project.service.JobPostingService;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -30,6 +37,7 @@ public class ApplicationServiceImpl implements ApplicationService {
     private final JobPostingRepository jobPostingRepository;
     private final CloudinaryService cloudinaryService;
     private final UserRepository userRepository;
+    private final ApplicationMapper applicationMapper;
 
     @Override
     public ApplicationResponse applyJob(Long idJob , ApplicationDTO applicationDTO) {
@@ -117,5 +125,22 @@ public class ApplicationServiceImpl implements ApplicationService {
                 .appliedAt(updatedApplication.getAppliedAt())
                 .status(updatedApplication.getStatus())
                 .build();
+    }
+
+    @Override
+    public Page<ApplicationResponse> getAllApplicationsByUser_Id(Integer page, Integer size) {
+        String userName = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        User user = userRepository.findByEmailAndActiveTrue(userName);
+        if (user == null) {
+            log.info("Có lỗi xảy ra không lấy được user đăng nhập !");
+            throw new BadRequestException("Có lỗi xảy ra không lấy được user đăng nhập !");
+        }
+
+        Pageable pageable = PageRequest.of(page-1, size);
+        Page<Application> pageResult = applicationRepository.findApplicationByUser_Id(user.getId(),pageable);
+        List<Application> content = pageResult.getContent();
+        List<ApplicationResponse> contentResult = content.stream().map(applicationMapper::toApplicationResponse).toList();
+        return new PageImpl<>(contentResult, pageResult.getPageable(), pageResult.getTotalElements());
     }
 }

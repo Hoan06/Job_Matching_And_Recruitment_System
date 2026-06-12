@@ -25,7 +25,7 @@ import project.model.entity.enum_type.JobStatusEnum;
 import project.model.entity.enum_type.RoleEnum;
 import project.service.JobPostingService;
 import project.service.UserService;
-import tools.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.Collections;
 

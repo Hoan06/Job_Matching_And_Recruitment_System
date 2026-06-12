@@ -45,4 +45,16 @@ public class CandidateController {
                 HttpStatus.CREATED
         ),HttpStatus.CREATED);
     }
+
+    @GetMapping("/my-applications")
+    public ResponseEntity<ApiDataResponse<Page<ApplicationResponse>>> getMyApplications(@RequestParam(value = "page" , defaultValue = "1") Integer page){
+        int size = 3;
+        return new ResponseEntity<>(new ApiDataResponse<>(
+                true,
+                "Lấy lịch sử ứng tuyển thành công .",
+                applicationService.getAllApplicationsByUser_Id(page,size),
+                null,
+                HttpStatus.OK
+        ) , HttpStatus.OK);
+    }
 }

@@ -13,4 +13,5 @@ public interface JobPostingService {
     Page<JobPostingResponse> getAllJobPostings(Integer page, Integer size);
     JobPostingResponse browseJobPosting(Long idJob , BrowseRequest  browseRequest);
     Page<JobPostingResponse> findByTitle(String title, Integer page, Integer size);
+
 }

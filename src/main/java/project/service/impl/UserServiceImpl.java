@@ -13,6 +13,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import project.exception.BadRequestException;
 import project.exception.NotFoundException;
 import project.mapper.UserMapper;
@@ -40,6 +41,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
@@ -51,6 +53,7 @@ public class UserServiceImpl implements UserService {
     private final RedisBlacklistService  redisBlacklistService;
 
     @Override
+    @Transactional
     public UserResponse register(UserDTO userDTO) {
         User user = User.builder()
                 .email(userDTO.getEmail())
@@ -67,6 +70,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional
     public JWTResponse login(LoginDTO userLoginDTO) {
         try {
             User user = userRepository.findByEmailAndActiveTrue(userLoginDTO.getEmail());
@@ -98,6 +102,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional
     public boolean logout(LogoutRequest logoutRequest, String accessToken) {
         if (accessToken == null || accessToken.trim().isEmpty() || !accessToken.startsWith("Bearer ")) {
             log.info("Access Token không hợp lệ hoặc bị thiếu !");
@@ -150,6 +155,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional
     public UserResponse createUser(UserDTO userDTO) {
         User user = User.builder()
                 .email(userDTO.getEmail())
@@ -176,6 +182,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional
     public boolean banUser(EmailRequest email) {
         User user = userRepository.findByEmailAndActiveTrue(email.getEmail());
         if (user == null) {

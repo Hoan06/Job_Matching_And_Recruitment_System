@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import project.exception.BadRequestException;
 import project.exception.NotFoundException;
 import project.mapper.JobPostingMapper;
@@ -29,12 +30,14 @@ import java.util.Optional;
 @Slf4j
 @Service
 @RequiredArgsConstructor
+@Transactional(readOnly = true)
 public class JobPostingServiceImpl implements JobPostingService {
     private final JobPostingRepository jobPostingRepository;
     private final UserRepository userRepository;
     private final JobPostingMapper jobPostingMapper;
 
     @Override
+    @Transactional
     public JobPostingResponse createJobPosting(JobPostingDTO jobPostingDTO) {
         String currentUsername = SecurityContextHolder.getContext().getAuthentication().getName();
 
@@ -59,6 +62,7 @@ public class JobPostingServiceImpl implements JobPostingService {
     }
 
     @Override
+    @Transactional
     public JobPostingResponse updateJobPosting(Long idJob, JobPostingUpdateDTO jobPostingDTO) {
         JobPosting existingJob = jobPostingRepository.findById(idJob).orElseThrow(
                 () -> new RuntimeException("Không tìm thấy tin tuyển dụng với ID: " + idJob)
@@ -121,6 +125,7 @@ public class JobPostingServiceImpl implements JobPostingService {
     }
 
     @Override
+    @Transactional
     public JobPostingResponse browseJobPosting(Long idJob , BrowseRequest browseRequest) {
         Optional<JobPosting> jobPosting = jobPostingRepository.findById(idJob);
         if (jobPosting.isEmpty()) {
@@ -151,7 +156,7 @@ public class JobPostingServiceImpl implements JobPostingService {
     @Override
     public Page<JobPostingResponse> findByTitle(String title, Integer page, Integer size) {
         Pageable pageable = PageRequest.of(page-1, size);
-        Page<JobPosting> pageResult = jobPostingRepository.findAllByTitleContaining(title,pageable);
+        Page<JobPosting> pageResult = jobPostingRepository.findAllByTitleContainingAndStatusEquals(title,pageable,JobStatusEnum.APPROVED);
         List<JobPosting> content = pageResult.getContent();
         List<JobPostingResponse> contentResult = content.stream().map(jobPostingMapper::mapToJobPostingResponse).toList();
         return new PageImpl<>(contentResult, pageResult.getPageable(), pageResult.getTotalElements());
