@@ -1,0 +1,2 @@
+2026-06-13 15:44:35.302 [http-nio-8080-exec-3] ERROR project.aspect.AppAspect - Phương thức register thất bại sau 27 ms với lỗi: Email này đã được sử dụng!
+2026-06-13 15:45:25.770 [http-nio-8080-exec-5] ERROR project.aspect.AppAspect - Phương thức createUser thất bại sau 4 ms với lỗi: Email này đã được sử dụng!

@@ -106,3 +106,29 @@
 2026-06-12 13:27:26.796 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: applyJob() | Thời gian thực hiện: 5029 ms
 2026-06-12 13:27:48.215 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-06-12 13:27:48.217 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-12 13:49:54.834 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 6492 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-12 13:49:54.836 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-12 13:49:56.596 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-12 13:49:56.813 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f23e00
+2026-06-12 13:49:56.815 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-12 13:50:03.520 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 9.019 seconds (process running for 9.5)
+2026-06-12 13:50:03.850 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-12 13:50:22.058 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 47 ms
+2026-06-12 13:50:22.059 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 427 ms
+2026-06-12 13:50:50.848 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 739 ms
+2026-06-12 13:50:50.994 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-12 13:50:51.007 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: revokeRefreshToken() | Thời gian thực hiện: 12 ms
+2026-06-12 13:50:51.016 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 569984
+2026-06-12 13:50:51.029 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: blacklistToken() | Thời gian thực hiện: 13 ms
+2026-06-12 13:50:51.029 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-12 13:50:51.029 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - User candidate123@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-12 13:50:51.029 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: logout() | Thời gian thực hiện: 37 ms
+2026-06-12 13:51:02.688 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: forgotPassword() | Thời gian thực hiện: 2 ms
+2026-06-12 13:51:24.858 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: resetPassword() | Thời gian thực hiện: 129 ms
+2026-06-12 13:51:29.337 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 3 ms
+2026-06-12 13:51:29.337 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 104 ms
+2026-06-12 13:51:41.462 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: forgotPassword() | Thời gian thực hiện: 2 ms
+2026-06-12 13:51:46.349 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: forgotPassword() | Thời gian thực hiện: 3 ms
+2026-06-12 13:51:55.932 [http-nio-8080-exec-9] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: forgotPassword() | Thời gian thực hiện: 5 ms
+2026-06-12 13:52:05.555 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-12 13:52:05.559 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

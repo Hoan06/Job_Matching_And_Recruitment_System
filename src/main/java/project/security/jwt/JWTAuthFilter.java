@@ -28,24 +28,38 @@ public class JWTAuthFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String token = getTokenFromRequest(request);
-        if (token != null) {
 
+        if (token != null) {
             if (redisBlacklistService.isCheckBlacklist(token)) {
-                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                response.setContentType("application/json;charset=UTF-8");
-                response.getWriter().write("{\"status\": 401, \"message\": \"Token đã bị vô hiệu hóa do người dùng đã đăng xuất!\"}");
+                sendUnauthorizedResponse(response, "Token đã bị vô hiệu hóa do người dùng đã đăng xuất!");
                 return;
             }
 
             if (jwtProvider.validateToken(token)) {
                 String email = jwtProvider.getEmailFromToken(token);
+
+                if (email == null) {
+                    sendUnauthorizedResponse(response, "Không thể xác định danh tính từ Token.");
+                    return;
+                }
+
                 CustomUserDetails userDetails = (CustomUserDetails) userDetailsService.loadUserByUsername(email);
                 Authentication authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
                 SecurityContextHolder.getContext().setAuthentication(authentication);
+            } else {
+                sendUnauthorizedResponse(response, "Token không hợp lệ hoặc đã hết hạn! Vui lòng xác thực lại.");
+                return;
             }
         }
 
         filterChain.doFilter(request, response);
+    }
+
+    private void sendUnauthorizedResponse(HttpServletResponse response, String message) throws IOException {
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        response.setContentType("application/json;charset=UTF-8");
+        String jsonResponse = String.format("{\"status\": 401, \"error\": \"Unauthorized\", \"message\": \"%s\"}", message);
+        response.getWriter().write(jsonResponse);
     }
 
     private String getTokenFromRequest(HttpServletRequest request) {

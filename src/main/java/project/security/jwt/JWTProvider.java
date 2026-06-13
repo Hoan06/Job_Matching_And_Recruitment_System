@@ -5,7 +5,6 @@ import io.jsonwebtoken.security.Keys;
 import io.jsonwebtoken.security.SignatureException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
@@ -23,7 +22,6 @@ public class JWTProvider {
 
     @Value("${jwt-reset-secret}")
     private String jwtResetSecret;
-
 
     public String generateToken(String email) {
         try {
@@ -49,57 +47,43 @@ public class JWTProvider {
             Jwts.parser().verifyWith(key).build().parseSignedClaims(token);
             return true;
         } catch (UnsupportedJwtException e) {
-            log.info("Hệ thống không hỗ trợ jwt");
-            throw new RuntimeException("Hệ thống không hỗ trợ jwt", e);
-        }catch (ExpiredJwtException e){
-            log.info("Chuỗi jwt hết hạn");
-            throw new RuntimeException("Chuỗi jwt hết hạn", e);
-        }catch (MalformedJwtException e){
-            log.info("Chuỗi jwt sai định dạng");
-            throw new RuntimeException("Chuỗi jwt sai định dạng", e);
-        }catch (SignatureException e){
-            log.info("Sai chữ kí JWT");
-            throw new RuntimeException("Sai chữ kí JWT", e);
-        }catch (IllegalArgumentException e){
-            log.info("Chuỗi JWT rỗng");
-            throw new RuntimeException("Chuỗi JWT rỗng", e);
-        }catch (JwtException e){
-            log.info("Lỗi xác thực JWT");
-            throw new RuntimeException("Lỗi xác thực JWT", e);
+            log.warn("Hệ thống không hỗ trợ JWT: {}", e.getMessage());
+        } catch (ExpiredJwtException e) {
+            log.warn("Chuỗi JWT đã hết hạn: {}", e.getMessage());
+        } catch (MalformedJwtException e) {
+            log.warn("Chuỗi JWT sai định dạng: {}", e.getMessage());
+        } catch (SignatureException e) {
+            log.warn("Sai chữ ký JWT: {}", e.getMessage());
+        } catch (IllegalArgumentException e) {
+            log.warn("Chuỗi JWT rỗng hoặc null: {}", e.getMessage());
+        } catch (JwtException e) {
+            log.warn("Lỗi xác thực JWT chung: {}", e.getMessage());
         }
+        return false;
     }
 
     public String getEmailFromToken(String token) {
         try {
             SecretKey key = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
             return Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload().getSubject();
-        }catch (Exception e){
-            log.error("getEmailFromToken", e);
-            throw new RuntimeException(e);
+        } catch (ExpiredJwtException e) {
+            return e.getClaims().getSubject();
+        } catch (Exception e){
+            log.error("getEmailFromToken error: ", e);
+            return null;
         }
     }
 
     public LocalDateTime getExpirationDateFromToken(String token) {
-        try{
+        try {
             SecretKey key = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
-
-            Date expiredDate = Jwts.parser()
-                    .verifyWith(key)
-                    .build()
-                    .parseSignedClaims(token)
-                    .getPayload()
-                    .getExpiration();
-
+            Date expiredDate = Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload().getExpiration();
             return expiredDate.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDateTime();
-        }catch (ExpiredJwtException e){
-            return e.getClaims()
-                    .getExpiration()
-                    .toInstant()
-                    .atZone(java.time.ZoneId.systemDefault())
-                    .toLocalDateTime();
-        } catch (Exception e){
-            log.error("getExpirationDateFromToken", e);
-            throw new RuntimeException("Không thể trích xuất thời gian hết hạn từ token " + e);
+        } catch (ExpiredJwtException e) {
+            return e.getClaims().getExpiration().toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDateTime();
+        } catch (Exception e) {
+            log.error("getExpirationDateFromToken error: ", e);
+            return null;
         }
     }
 
@@ -108,7 +92,6 @@ public class JWTProvider {
             Date today = new Date();
             long resetExpiry = 5 * 60 * 1000;
             Date expiredJWT = new Date(today.getTime() + resetExpiry);
-
             SecretKey key = Keys.hmacShaKeyFor(jwtResetSecret.getBytes(StandardCharsets.UTF_8));
 
             return Jwts.builder()
@@ -129,14 +112,18 @@ public class JWTProvider {
             Jwts.parser().verifyWith(key).build().parseSignedClaims(token);
             return true;
         } catch (Exception e) {
-            log.error("Token reset password không hợp lệ: {}", e.getMessage());
-            throw new RuntimeException("Link xác thực không hợp lệ hoặc đã hết hạn!");
+            log.error("Token reset password không hợp lệ hoặc hết hạn: {}", e.getMessage());
+            return false;
         }
     }
 
     public String getEmailFromResetToken(String token) {
-        SecretKey key = Keys.hmacShaKeyFor(jwtResetSecret.getBytes(StandardCharsets.UTF_8));
-        return Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload().getSubject();
+        try {
+            SecretKey key = Keys.hmacShaKeyFor(jwtResetSecret.getBytes(StandardCharsets.UTF_8));
+            return Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload().getSubject();
+        } catch (Exception e) {
+            log.error("getEmailFromResetToken error: ", e);
+            return null;
+        }
     }
-
 }

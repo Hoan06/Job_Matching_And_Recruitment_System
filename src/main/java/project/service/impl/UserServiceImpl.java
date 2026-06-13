@@ -15,6 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import project.exception.BadRequestException;
+import project.exception.ConflictException;
 import project.exception.NotFoundException;
 import project.mapper.UserMapper;
 import project.model.dto.request.EmailRequest;
@@ -55,6 +56,10 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public UserResponse register(UserDTO userDTO) {
+        if (userRepository.existsByEmail(userDTO.getEmail())) {
+            log.info("Email đã tồn tại hệ thống: {}", userDTO.getEmail());
+            throw new ConflictException("Email này đã được sử dụng!");
+        }
         User user = User.builder()
                 .email(userDTO.getEmail())
                 .passwordHash(passwordEncoder.encode(userDTO.getPassword()))
@@ -157,6 +162,10 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public UserResponse createUser(UserDTO userDTO) {
+        if (userRepository.existsByEmail(userDTO.getEmail())) {
+            log.info("Email đã tồn tại hệ thống: {}", userDTO.getEmail());
+            throw new ConflictException("Email này đã được sử dụng!");
+        }
         User user = User.builder()
                 .email(userDTO.getEmail())
                 .passwordHash(passwordEncoder.encode(userDTO.getPassword()))

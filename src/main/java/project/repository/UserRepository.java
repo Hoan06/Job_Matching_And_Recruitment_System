@@ -10,4 +10,5 @@ import project.model.entity.User;
 public interface UserRepository extends JpaRepository<User, Long> {
     User findByEmailAndActiveTrue(String email);
     Page<User> findAllByActiveTrue(Pageable pageable);
+    boolean existsByEmail(String email);
 }

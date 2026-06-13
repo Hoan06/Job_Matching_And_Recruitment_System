@@ -72,4 +72,17 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(apiDataResponse, HttpStatus.NOT_FOUND);
     }
 
+    @ExceptionHandler(ConflictException.class)
+    public ResponseEntity<ApiDataResponse<String>> handleConflictException(ConflictException ex) {
+        ApiDataResponse<String> apiDataResponse = new ApiDataResponse<>(
+                false,
+                ex.getMessage(),
+                null,
+                ex.getMessage(),
+                HttpStatus.CONFLICT
+        );
+
+        return new ResponseEntity<>(apiDataResponse, HttpStatus.CONFLICT);
+    }
+
 }

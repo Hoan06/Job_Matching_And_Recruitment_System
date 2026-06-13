@@ -24,7 +24,6 @@ public class UserDTO {
             regexp = "^[a-zA-A0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$",
             message = "Định dạng email không hợp lệ (Ví dụ: example@gmail.com)!"
     )
-    @ValidEmail
     private String email;
     @NotBlank(message = "Mật khẩu không được để trống !")
     private String password;

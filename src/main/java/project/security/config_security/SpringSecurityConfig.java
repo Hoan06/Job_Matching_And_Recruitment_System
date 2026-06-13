@@ -28,6 +28,11 @@ public class SpringSecurityConfig {
     private final JWTAuthFilter jwtAuthFilter;
 
     @Bean
+    public JWTAuthenticationEntryPoint jwtAuthenticationEntryPoint() {
+        return new JWTAuthenticationEntryPoint();
+    }
+
+    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(req -> req
@@ -36,6 +41,9 @@ public class SpringSecurityConfig {
                         .requestMatchers("/api/v1/employer/**").hasRole("EMPLOYER")
                         .requestMatchers("/api/v1/candidate/**").hasRole("CANDIDATE")
                         .anyRequest().authenticated())
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(jwtAuthenticationEntryPoint())
+                )
                 .cors(Customizer.withDefaults())
                 .sessionManagement(ss -> ss.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProviderBean())
