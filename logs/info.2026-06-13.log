@@ -76,3 +76,127 @@
 2026-06-13 15:45:25.770 [http-nio-8080-exec-5] INFO  project.service.impl.UserServiceImpl - Email đã tồn tại hệ thống: candidate123@gmail.com
 2026-06-13 15:48:43.336 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
 2026-06-13 15:48:43.339 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2026-06-13 15:50:43.497 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Starting JobMatchingAndRecruitmentSystemApplication using Java 21.0.9 with PID 27112 (D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System\build\classes\java\main started by HUY HOAN in D:\HOC_LAP_TRINH\JavaWebService\Job_Matching_and_Recruitment_System)
+2026-06-13 15:50:43.499 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-13 15:50:45.553 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-13 15:50:46.350 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f541646
+2026-06-13 15:50:46.356 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-13 15:50:53.712 [restartedMain] INFO  p.JobMatchingAndRecruitmentSystemApplication - Started JobMatchingAndRecruitmentSystemApplication in 10.693 seconds (process running for 11.17)
+2026-06-13 15:50:54.602 [restartedMain] INFO  project.utils.DataSeeding - Tài khoản ADMIN mặc định [admin@gmail.com] đã tồn tại, bỏ qua bước khởi tạo.
+2026-06-13 15:55:52.721 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: register() | Thời gian thực hiện: 209 ms
+2026-06-13 15:56:28.588 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 11 ms
+2026-06-13 15:56:28.589 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 388 ms
+2026-06-13 15:56:46.930 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 629 ms
+2026-06-13 15:56:47.069 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 15:56:47.084 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: revokeRefreshToken() | Thời gian thực hiện: 14 ms
+2026-06-13 15:56:47.091 [http-nio-8080-exec-5] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 580908
+2026-06-13 15:56:47.106 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: blacklistToken() | Thời gian thực hiện: 14 ms
+2026-06-13 15:56:47.106 [http-nio-8080-exec-5] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-13 15:56:47.106 [http-nio-8080-exec-5] INFO  project.service.impl.UserServiceImpl - User admin@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-13 15:56:47.106 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: logout() | Thời gian thực hiện: 39 ms
+2026-06-13 16:04:18.061 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:04:18.061 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 146 ms
+2026-06-13 16:04:28.681 [http-nio-8080-exec-9] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:04:44.940 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: refreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:05:36.320 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:05:36.328 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:05:36.332 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: revokeRefreshToken() | Thời gian thực hiện: 2 ms
+2026-06-13 16:05:36.337 [http-nio-8080-exec-1] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 521662
+2026-06-13 16:05:36.339 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: blacklistToken() | Thời gian thực hiện: 1 ms
+2026-06-13 16:05:36.339 [http-nio-8080-exec-1] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-13 16:05:36.339 [http-nio-8080-exec-1] INFO  project.service.impl.UserServiceImpl - User admin@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-13 16:05:36.339 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: logout() | Thời gian thực hiện: 12 ms
+2026-06-13 16:06:45.864 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:06:45.865 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 142 ms
+2026-06-13 16:06:57.807 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:06:57.874 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: getAllHasPage() | Thời gian thực hiện: 31 ms
+2026-06-13 16:07:58.801 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:07:58.946 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: createUser() | Thời gian thực hiện: 132 ms
+2026-06-13 16:08:48.537 [http-nio-8080-exec-9] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 3 ms
+2026-06-13 16:08:48.557 [http-nio-8080-exec-9] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: banUser() | Thời gian thực hiện: 5 ms
+2026-06-13 16:09:14.911 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:09:31.180 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:09:31.236 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: getAllJobPostings() | Thời gian thực hiện: 44 ms
+2026-06-13 16:11:35.281 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:11:35.306 [http-nio-8080-exec-5] INFO  project.service.impl.JobPostingServiceImpl - Tin này đã được duyệt từ trước rồi !
+2026-06-13 16:11:38.888 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:11:38.898 [http-nio-8080-exec-6] INFO  project.service.impl.JobPostingServiceImpl - Không tìm thấy tin tuyển muốn duyệt !
+2026-06-13 16:11:43.535 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:11:43.549 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: admin@gmail.com | Chức năng: browseJobPosting() | Thời gian thực hiện: 4 ms
+2026-06-13 16:13:13.714 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 9 ms
+2026-06-13 16:13:13.715 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 129 ms
+2026-06-13 16:13:40.958 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:13:40.972 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:13:40.977 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: revokeRefreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:13:40.982 [http-nio-8080-exec-1] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 572017
+2026-06-13 16:13:40.984 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: blacklistToken() | Thời gian thực hiện: 1 ms
+2026-06-13 16:13:40.984 [http-nio-8080-exec-1] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-13 16:13:40.984 [http-nio-8080-exec-1] INFO  project.service.impl.UserServiceImpl - User candidate123@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-13 16:13:40.984 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: logout() | Thời gian thực hiện: 14 ms
+2026-06-13 16:13:50.294 [http-nio-8080-exec-2] INFO  project.service.impl.UserServiceImpl - Tài khoản đã bị khóa không thể đăng nhập !
+2026-06-13 16:13:57.650 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 2 ms
+2026-06-13 16:13:57.650 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 129 ms
+2026-06-13 16:14:53.982 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:14:54.023 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: employer2@gmail.com | Chức năng: createJobPosting() | Thời gian thực hiện: 8 ms
+2026-06-13 16:15:27.753 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:15:27.753 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 123 ms
+2026-06-13 16:15:46.735 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:15:46.778 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: findByTitle() | Thời gian thực hiện: 33 ms
+2026-06-13 16:16:29.952 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:16:38.278 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:16:38.380 [http-nio-8080-exec-10] INFO  project.service.impl.ApplicationServiceImpl - Định dạng file không hợp lệ! Hệ thống chỉ chấp nhận file PDF !
+2026-06-13 16:16:49.824 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:16:57.474 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:17:14.675 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: refreshToken() | Thời gian thực hiện: 4 ms
+2026-06-13 16:17:30.400 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:17:51.375 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 2 ms
+2026-06-13 16:17:51.377 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 111 ms
+2026-06-13 16:18:00.546 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:18:18.557 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:18:21.141 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: uploadPdf() | Thời gian thực hiện: 2555 ms
+2026-06-13 16:18:21.160 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - Candidate ID: candidate123@gmail.com applied for Job ID: 4
+2026-06-13 16:18:21.160 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User: candidate123@gmail.com | Chức năng: applyJob() | Thời gian thực hiện: 2580 ms
+2026-06-13 16:18:46.531 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:18:46.566 [http-nio-8080-exec-5] INFO  project.service.impl.ApplicationServiceImpl - Định dạng file không hợp lệ! Hệ thống chỉ chấp nhận file PDF !
+2026-06-13 16:19:17.524 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 1 ms
+2026-06-13 16:19:17.524 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 134 ms
+2026-06-13 16:20:11.274 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:20:18.869 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:20:18.896 [http-nio-8080-exec-8] INFO  project.service.impl.ApplicationServiceImpl - Không tìm thấy đơn ứng tuyển muốn duyệt !
+2026-06-13 16:21:03.105 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:21:03.105 [http-nio-8080-exec-10] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 127 ms
+2026-06-13 16:21:22.219 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:21:22.225 [http-nio-8080-exec-2] INFO  project.service.impl.ApplicationServiceImpl - Không tìm thấy đơn ứng tuyển muốn duyệt !
+2026-06-13 16:21:26.384 [http-nio-8080-exec-3] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:21:34.838 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:22:32.726 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:22:32.739 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:22:32.744 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: revokeRefreshToken() | Thời gian thực hiện: 5 ms
+2026-06-13 16:22:32.748 [http-nio-8080-exec-4] INFO  project.service.impl.UserServiceImpl - Thời gian còn lại của token (ms): 510251
+2026-06-13 16:22:32.749 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: blacklistToken() | Thời gian thực hiện: 1 ms
+2026-06-13 16:22:32.749 [http-nio-8080-exec-4] INFO  project.service.impl.UserServiceImpl - Đã lưu token vào Redis Blacklist thành công.
+2026-06-13 16:22:32.749 [http-nio-8080-exec-4] INFO  project.service.impl.UserServiceImpl - User employer1@gmail.com đã đăng xuất thành công và vô hiệu hóa Token.
+2026-06-13 16:22:32.749 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: logout() | Thời gian thực hiện: 11 ms
+2026-06-13 16:22:36.772 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 4 ms
+2026-06-13 16:22:36.773 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 118 ms
+2026-06-13 16:22:53.120 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:22:55.813 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:22:58.795 [http-nio-8080-exec-9] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:25:02.829 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 2 ms
+2026-06-13 16:25:02.851 [http-nio-8080-exec-1] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: updateStatusApplication() | Thời gian thực hiện: 15 ms
+2026-06-13 16:26:33.642 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 2 ms
+2026-06-13 16:26:33.642 [http-nio-8080-exec-4] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 135 ms
+2026-06-13 16:26:40.648 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:26:40.935 [http-nio-8080-exec-6] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: changePassword() | Thời gian thực hiện: 265 ms
+2026-06-13 16:27:19.349 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: forgotPassword() | Thời gian thực hiện: 4 ms
+2026-06-13 16:27:49.250 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: resetPassword() | Thời gian thực hiện: 124 ms
+2026-06-13 16:29:54.652 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 4 ms
+2026-06-13 16:29:54.652 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 124 ms
+2026-06-13 16:30:45.379 [http-nio-8080-exec-5] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:31:52.478 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: createRefreshToken() | Thời gian thực hiện: 3 ms
+2026-06-13 16:31:52.478 [http-nio-8080-exec-7] INFO  project.aspect.AppAspect - User: anonymousUser | Chức năng: login() | Thời gian thực hiện: 123 ms
+2026-06-13 16:32:04.126 [http-nio-8080-exec-8] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 1 ms
+2026-06-13 16:36:33.848 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: Anonymous | Chức năng: isCheckBlacklist() | Thời gian thực hiện: 0 ms
+2026-06-13 16:36:33.868 [http-nio-8080-exec-2] INFO  project.aspect.AppAspect - User: employer1@gmail.com | Chức năng: updateStatusApplication() | Thời gian thực hiện: 14 ms
+2026-06-13 16:36:39.770 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-13 16:36:39.772 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
